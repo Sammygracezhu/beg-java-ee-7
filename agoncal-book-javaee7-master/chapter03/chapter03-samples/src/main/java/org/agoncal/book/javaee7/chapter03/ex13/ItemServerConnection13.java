@@ -14,12 +14,13 @@ public class ItemServerConnection13 {
   // ======================================
   // =             Attributes             =
   // ======================================
-
+  @NotNull      
   @URL
   private String resourceURL;
   @NotNull
   @URL(protocol = "http", host = "www.cdbookstore.com")
   private String itemURL;
+  @NotNull
   @URL(protocol = "ftp", port = 21)
   private String ftpServerURL;
 
