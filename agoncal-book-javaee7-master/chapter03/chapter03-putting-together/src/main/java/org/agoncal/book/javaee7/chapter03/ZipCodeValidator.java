@@ -17,7 +17,7 @@ public class ZipCodeValidator implements ConstraintValidator<ZipCode, String> {
 
   @Inject
   @USA
-  private ZipCodeChecker checker = new ZipCodeChecker();
+  private ZipCodeChecker checker;
   private Pattern zipPattern = Pattern.compile("\\d{5}(-\\d{5})?");
 
   @Override
